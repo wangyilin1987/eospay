@@ -160,7 +160,7 @@ extern "C" {
         {
             eosio::execute_action(name(receiver), name(code), &eospay::cust_transfer);
         }
-        else if( code == receiver || action == name("onerror").value )
+        else if( code == receiver )
         {
             switch( action )
             { 
